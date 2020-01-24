@@ -8,5 +8,7 @@ class profile::nginx (
       port           => $vhost['port'],
       server_aliases => $vhost['server_aliases'],
     }
+  nginx::vhost {$facts['fqdn']:
+
   }
 }
